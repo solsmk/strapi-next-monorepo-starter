@@ -8,7 +8,9 @@
     "lint": "next lint",
     "preview": "next build && next start",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "storybook": "APP_PUBLIC_URL=http://localhost:3000 STRAPI_URL=http://localhost:1337 STRAPI_REST_READONLY_API_KEY=storybook-dummy storybook dev -p 6006",
+    "build-storybook": "APP_PUBLIC_URL=http://localhost:3000 STRAPI_URL=http://localhost:1337 STRAPI_REST_READONLY_API_KEY=storybook-dummy storybook build"
   },
   "browserslist": [
     ">0.3%",
@@ -79,6 +81,9 @@
     "@repo/prettier-config": "*",
     "@repo/strapi": "*",
     "@repo/typescript-config": "*",
+    "@storybook/addon-mcp": "^0.2.2",
+    "@storybook/addon-themes": "^10.2.4",
+    "@storybook/nextjs-vite": "^10.2.4",
     "@tailwindcss/postcss": "^4.0.9",
     "@types/lodash": "^4",
     "@types/node": "^22",
@@ -88,6 +93,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "postcss": "^8.4.47",
     "prettier-plugin-tailwindcss": "^0.6.11",
+    "storybook": "^10.2.4",
     "tailwindcss": "^4.0.9",
     "typescript": "^5"
   },
