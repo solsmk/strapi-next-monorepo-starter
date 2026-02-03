@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server"
 
-import { getAuth } from "@/lib/auth"
+import { auth } from "@/lib/auth"
 import { Link } from "@/lib/navigation"
 import { Button } from "@/components/ui/button"
 import {
@@ -19,7 +19,7 @@ export default async function AuthPage({
 
   setRequestLocale(locale)
 
-  const session = await getAuth()
+  const session = await auth()
 
   return (
     <div className="space-y-10">

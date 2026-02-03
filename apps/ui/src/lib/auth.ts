@@ -1,23 +1,16 @@
 import { Result } from "@repo/strapi"
-import { getServerSession } from "next-auth"
-import CredentialsProvider from "next-auth/providers/credentials"
-
-import type {
-  GetServerSidePropsContext,
-  NextApiRequest,
-  NextApiResponse,
-} from "next"
-import type { NextAuthOptions } from "next-auth"
+import NextAuth from "next-auth"
+import Credentials from "next-auth/providers/credentials"
 
 import { PrivateStrapiClient } from "@/lib/strapi-api"
 
-export const authOptions: NextAuthOptions = {
+export const { auth, handlers, signIn, signOut } = NextAuth({
   session: {
     strategy: "jwt",
     maxAge: 2592000, // 30 days - synced with strapi
   },
   providers: [
-    CredentialsProvider({
+    Credentials({
       name: "StrapiCredentials",
       credentials: {
         email: { label: "Email", type: "text" },
@@ -163,14 +156,4 @@ export const authOptions: NextAuthOptions = {
     signIn: "/auth/signin",
     signOut: "/auth/signout",
   },
-}
-
-// Use it in server contexts
-export function getAuth(
-  ...args:
-    | [GetServerSidePropsContext["req"], GetServerSidePropsContext["res"]]
-    | [NextApiRequest, NextApiResponse]
-    | []
-) {
-  return getServerSession(...args, authOptions)
-}
+})

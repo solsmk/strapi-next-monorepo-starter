@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server"
 
 import { AppLocale } from "@/types/general"
 
-import { getAuth } from "@/lib/auth"
+import { auth } from "@/lib/auth"
 import { fetchNavbar } from "@/lib/strapi-api/content/server"
 import { cn } from "@/lib/styles"
 import AppLink from "@/components/elementary/AppLink"
@@ -31,7 +31,7 @@ export async function StrapiNavbar({ locale }: { readonly locale: AppLocale }) {
     .filter((link) => link.href)
     .concat(...hardcodedLinks)
 
-  const session = await getAuth()
+  const session = await auth()
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-white/90 shadow-sm backdrop-blur transition-colors duration-300">

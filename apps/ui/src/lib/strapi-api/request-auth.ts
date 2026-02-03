@@ -1,7 +1,7 @@
 import { env } from "@/env.mjs"
 import { getSession } from "next-auth/react"
 
-import { getAuth } from "@/lib/auth"
+import { auth } from "@/lib/auth"
 
 const ALLOWED_STRAPI_ENDPOINTS: Record<string, string[]> = {
   GET: [
@@ -78,7 +78,7 @@ const getStrapiUserTokenFromNextAuth = async () => {
   const isRSC = typeof window === "undefined"
   if (isRSC) {
     // server side
-    const session = await getAuth()
+    const session = await auth()
     return session?.strapiJWT
   }
 
