@@ -1,4 +1,4 @@
-// https://next-auth.js.org/getting-started/typescript
+// https://authjs.dev/getting-started/typescript
 
 import { DefaultSession } from "next-auth"
 
@@ -17,7 +17,7 @@ export interface AppSession {
 }
 
 declare module "next-auth" {
-  // Returned by `useSession`, `getSession` and received as a prop on the `SessionProvider` React Context
+  // Returned by `useSession`, `auth()` and received as a prop on the `SessionProvider` React Context
   // eslint-disable-next-line no-unused-vars
   interface Session extends AppSession {
     user: User
@@ -30,7 +30,7 @@ declare module "next-auth" {
   interface User extends AppUser {}
 }
 
-declare module "next-auth/jwt" {
+declare module "@auth/core/jwt" {
   // Returned by the `jwt` callback and `getToken`, when using JWT sessions
   // eslint-disable-next-line no-unused-vars
   interface JWT {

@@ -1,3 +1,5 @@
+import type { Messages } from "next-intl"
+
 type Paths<Schema, Path extends string = ""> = Schema extends string
   ? Path
   : Schema extends object
@@ -9,4 +11,4 @@ type Paths<Schema, Path extends string = ""> = Schema extends string
       }[keyof Schema & string]
     : never
 
-export type IntlKeysPath = Paths<IntlMessages>
+export type IntlKeysPath = Paths<Messages>

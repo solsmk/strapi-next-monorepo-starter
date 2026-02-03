@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
-import { withAuth } from "next-auth/middleware"
 import createMiddleware from "next-intl/middleware"
 
+import { auth } from "./lib/auth"
 import { isDevelopment } from "./lib/general-helpers"
 import { routing } from "./lib/navigation"
 
@@ -11,22 +11,7 @@ const intlMiddleware = createMiddleware(routing)
 // List all pages that require authentication (non-public)
 const authPages = ["/auth/change-password", "/auth/signout"]
 
-const authMiddleware = withAuth(
-  // Note that this callback is only invoked if
-  // the `authorized` callback has returned `true`
-  // and not for pages listed in `pages`.
-  (req) => intlMiddleware(req),
-  {
-    callbacks: {
-      authorized: ({ token }) => token != null,
-    },
-    pages: {
-      signIn: "/auth/signin",
-    },
-  }
-)
-
-export default function middleware(req: NextRequest) {
+export default auth((req) => {
   // Handle HTTPS redirection in production in Heroku servers
   // Comment this block when running locally (using `next start`)
   const xForwardedProtoHeader = req.headers.get("x-forwarded-proto")
@@ -49,13 +34,15 @@ export default function middleware(req: NextRequest) {
   const isAuthPage = authPathnameRegex.test(req.nextUrl.pathname)
 
   // If the request is for a non-public (auth) page, require authentication
-  if (isAuthPage) {
-    return (authMiddleware as any)(req)
+  if (isAuthPage && !req.auth) {
+    const signInUrl = new URL("/auth/signin", req.url)
+    signInUrl.searchParams.set("callbackUrl", req.nextUrl.pathname)
+    return NextResponse.redirect(signInUrl)
   }
 
-  // All other pages are public
+  // All pages go through intl middleware
   return intlMiddleware(req)
-}
+})
 
 export const config = {
   // Match only internationalized pathnames

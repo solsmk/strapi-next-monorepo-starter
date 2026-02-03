@@ -1,4 +1,3 @@
-import withPlaiceholder from "@plaiceholder/next"
 import { withSentryConfig } from "@sentry/nextjs"
 import plugin from "next-intl/plugin"
 
@@ -58,7 +57,7 @@ const nextConfig = {
 }
 
 const withConfig = (() => {
-  let config = withNextIntl(withPlaiceholder(nextConfig))
+  let config = withNextIntl(nextConfig)
 
   config = withSentryConfig(config, {
     // For all available options, see:

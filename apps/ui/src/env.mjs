@@ -27,8 +27,8 @@ export const env = createEnv({
     NEXT_OUTPUT: z.string().optional(),
     WEBPACK_CACHE_TYPE: z.enum(["filesystem", "memory"]).optional(),
 
-    NEXTAUTH_URL: z.string().url().optional(),
-    NEXTAUTH_SECRET: z.string().optional(),
+    AUTH_URL: z.string().url().optional(),
+    AUTH_SECRET: z.string().optional(),
 
     SENTRY_AUTH_TOKEN: z.string().optional(),
     SENTRY_ORG: z.string().optional(),
@@ -80,8 +80,8 @@ export const env = createEnv({
       return coercedRevalidate
     })(),
 
-    NEXTAUTH_URL: process.env.NEXTAUTH_URL,
-    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+    AUTH_URL: process.env.AUTH_URL,
+    AUTH_SECRET: process.env.AUTH_SECRET,
 
     NODE_ENV: process.env.NODE_ENV,
     APP_ENV: process.env.APP_ENV,

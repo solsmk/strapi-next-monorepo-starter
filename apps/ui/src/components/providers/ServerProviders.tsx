@@ -18,7 +18,7 @@ export async function ServerProviders({ children, locale }: Props) {
   const messages = await getMessages()
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider messages={messages}>
       {children}
     </NextIntlClientProvider>
   )
