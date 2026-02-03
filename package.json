@@ -1,19 +1,10 @@
 {
-  "name": "strapi-next-monorepo-starter",
+  "name": "sols-alk-template",
   "version": "2.0.0",
   "private": true,
   "author": {
-    "name": "Notum Technologies",
-    "email": "info@notum.cz",
-    "url": "https://notum.cz"
+    "name": "Sols Alk"
   },
-  "maintainers": [
-    {
-      "name": "Notum Technologies",
-      "email": "info@notum.cz",
-      "url": "https://notum.cz"
-    }
-  ],
   "workspaces": [
     "packages/*",
     "apps/*"

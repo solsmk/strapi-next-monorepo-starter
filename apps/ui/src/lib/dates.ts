@@ -1,5 +1,5 @@
 import dayjs from "dayjs"
-import cs from "dayjs/locale/cs"
+import mk from "dayjs/locale/mk"
 import localizedFormat from "dayjs/plugin/localizedFormat"
 import timezone from "dayjs/plugin/timezone"
 import utc from "dayjs/plugin/utc"
@@ -12,8 +12,8 @@ export const setupDayJs = () => {
   dayjs.extend(utc)
   dayjs.extend(timezone)
   dayjs.extend(localizedFormat)
-  dayjs.locale(cs)
-  dayjs.tz.setDefault("Europe/Prague")
+  dayjs.locale(mk)
+  dayjs.tz.setDefault("Europe/Skopje")
 }
 
 export function formatDateRange(

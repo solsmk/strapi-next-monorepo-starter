@@ -1,0 +1,239 @@
+{
+  "seo": {
+    "metaTitle": "Sols Alk",
+    "metaDescription": "Sols Alk - Веб платформа",
+    "metaImageUrl": "",
+    "keywords": "Sols Alk",
+    "metaRobots": "index, follow",
+    "applicationName": "Sols Alk",
+    "siteName": "Sols Alk",
+    "email": "",
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Sols Alk",
+      "description": "Sols Alk - Веб платформа",
+      "siteId": "",
+      "creator": "",
+      "creatorId": "",
+      "imageUrl": ""
+    }
+  },
+
+  "general": {
+    "noOptionsAvailable": "Нема достапни опции",
+    "search": "Пребарај",
+    "loading": "Се вчитува",
+    "cancel": "Откажи",
+    "close": "Затвори",
+    "submitForm": "Испрати",
+    "saveChanges": "Зачувај промени"
+  },
+
+  "tables": {
+    "previousPage": "Претходна страница",
+    "nextPage": "Следна страница",
+    "lastPage": "Последна страница",
+    "firstPage": "Прва страница",
+    "rowsPerPage": "Редови по страница",
+    "pageXOfY": "Страница {x} од {y}",
+    "ascending": "Растечки",
+    "descending": "Опаѓачки",
+    "noData": "Нема податоци"
+  },
+
+  "navbar": {
+    "account": "Сметка",
+    "actions": {
+      "profile": "Профил",
+      "signOut": "Одјави се",
+      "changePassword": "Промени лозинка",
+      "signIn": "Најави се"
+    }
+  },
+
+  "comps": {
+    "fileInput": {
+      "label": "Избери датотека",
+      "dragAndDrop": "Додајте датотека со влечење или изберете со клик",
+      "validFileTypes": "Датотеката мора да биде во формат {validFileTypes}",
+      "wrongFileType": "Овој тип на датотека не е поддржан",
+      "selectedFile": "Избрана датотека: {fileName}",
+      "removeFile": "Отстрани датотека"
+    },
+    "datePicker": {
+      "label": "Изберете датум"
+    },
+    "dateRangePicker": {
+      "label": "Изберете период"
+    },
+    "themeToggle": {
+      "label": "Промени тема"
+    },
+    "dialog": {
+      "confirmClose": "Дали сакате да го затворите дијалогот? Ќе ги изгубите сите незачувани промени."
+    }
+  },
+
+  "errors": {
+    "global": {
+      "title": "Настана непозната грешка",
+      "tryAgain": "Обиди се повторно",
+      "invalidContent": "Оваа содржина не може да се прикаже",
+      "somethingWentWrong": "Нешто тргна наопаку"
+    },
+
+    "notFound": {
+      "title": "Страницата не е пронајдена",
+      "description": "Страницата што ја барате не е пронајдена.",
+      "solution": "Проверете дали сте ја внеле правилната адреса или вратете се на почетната страница.",
+      "redirect": "Оди на почетна страница"
+    },
+
+    "forms": {
+      "errorsInForm": "Формуларот содржи грешки",
+      "checkFormForErrors": "Проверете дали недостасуваат вредности"
+    },
+
+    "zodValidation": {
+      "invalid_type": "Очекуван тип е {expected}, но е внесен {received}",
+      "invalid_type_received_undefined": "Полето е задолжително",
+      "invalid_literal": "Невалидна вредност, се очекува {expected}",
+
+      "invalid_string": {
+        "regex": "Невалиден формат"
+      },
+      "too_small": {
+        "string": {
+          "exact": "Текстот мора да содржи точно {minimum} знаци",
+          "inclusive": "Текстот мора да содржи најмалку {minimum} знаци",
+          "not_inclusive": "Текстот мора да содржи повеќе од {minimum} знаци"
+        },
+        "number": {
+          "exact": "Вредноста мора да биде точно {minimum}",
+          "inclusive": "Минималната вредност е {minimum}",
+          "not_inclusive": "Бројот мора да биде поголем од {minimum}"
+        }
+      },
+      "too_big": {
+        "string": {
+          "exact": "Текстот мора да содржи точно {maximum} знаци",
+          "inclusive": "Текстот мора да содржи најмногу {maximum} знаци",
+          "not_inclusive": "Текстот мора да содржи помалку од {maximum} знаци"
+        },
+        "number": {
+          "exact": "Вредноста мора да биде точно {maximum}",
+          "inclusive": "Максималната вредност е {maximum}",
+          "not_inclusive": "Бројот мора да биде помал од {maximum}"
+        }
+      },
+      "custom": {
+        "password": "Лозинките не се совпаѓаат",
+        "passwordWithNumber": "Текстот мора да содржи барем 1 број",
+        "phoneNumber": "Ова поле мора да содржи 9 цифри"
+      }
+    }
+  },
+
+  "contactForm": {
+    "name": "Име и Презиме",
+    "namePlaceholder": "Марко Марковски",
+    "email": "Е-пошта",
+    "emailPlaceholder": "marko.markovski@gmail.com",
+    "message": "Порака",
+    "gdpr": "Со испраќање се согласувате со ",
+    "submit": "Испрати",
+    "success": "Формуларот е успешно испратен",
+    "error": "Настана грешка при испраќање на формуларот, обидете се повторно",
+    "gdprLink": "Информации за обработка на лични податоци"
+  },
+
+  "auth": {
+    "signIn": {
+      "status": {
+        "fail": "Најавувањето не успеа",
+        "success": "Успешно најавување",
+        "checkCredentials": "Проверете ги вашите податоци за најава"
+      },
+      "errors": {
+        "CredentialsSignin": "Внесовте неточни податоци за најава."
+      },
+      "header": "Најава",
+      "description": "Внесете ги вашите податоци за најава.",
+      "email": "Е-пошта",
+      "password": "Лозинка",
+      "submit": "Најави се",
+      "forgotPassword": "Заборавена лозинка",
+      "createAccount": "Креирај сметка"
+    },
+
+    "register": {
+      "status": {
+        "fail": "Регистрацијата не успеа",
+        "success": "Успешна регистрација",
+        "checkCredentials": "Проверете ги вашите податоци"
+      },
+      "errors": {
+        "credentials": "Внесовте неточни податоци",
+        "unexpectedError": "Регистрацијата не успеа. Обидете се повторно подоцна.",
+        "emailUsernameTaken": "Е-поштата е веќе зафатена. Изберете друга."
+      },
+      "header": "Регистрација",
+      "description": "Креирајте сметка за пристап до системот.",
+      "email": "Внесете ја вашата е-пошта",
+      "password": "Креирајте лозинка",
+      "checkPassword": "Потврдете лозинка",
+      "submit": "Креирај сметка",
+      "forgotPassword": "Веќе имате сметка? Најавете се.",
+      "checkEmail": "Следете ги упатствата во вашата е-пошта за потврда на е-поштата.",
+      "signInLinkLinkDescription": "Веќе имате сметка?",
+      "signInLink": "Најави се"
+    },
+
+    "changePassword": {
+      "errors": {
+        "invalidCurrentPassword": "Тековната лозинка не се совпаѓа",
+        "unexpectedError": "Настана неочекувана грешка. Обидете се повторно подоцна.",
+        "newPasswordSameAsCurrent": "Новата лозинка е иста како тековната"
+      },
+      "successfullyChanged": "Лозинката е успешно променета",
+      "header": "Промена на лозинка",
+      "description": "Изберете нова лозинка која ќе ја користите за пристап до системот.",
+      "currentPassword": "Тековна лозинка",
+      "password": "Нова лозинка",
+      "confirmPassword": "Потврдете нова лозинка",
+      "submit": "Промени лозинка"
+    },
+
+    "accountActivation": {
+      "successfullySet": "Сметката е успешно активирана. Можете да се најавите.",
+      "errors": {
+        "Incorrect code provided": "Генериран е неточен линк. Контактирајте ја поддршката."
+      },
+      "welcome": "Добредојдовте",
+      "activateAccount": "Ви е креирана нова сметка со е-пошта {email}.",
+      "invalidLink": "Овој линк не е валиден.",
+      "activate": "Активирај сметка",
+      "header": "Поставување лозинка",
+      "description": "Изберете лозинка која ќе ја користите за најава.",
+      "submit": "Активирај сметка",
+      "password": "Нова лозинка",
+      "confirmPassword": "Потврдете лозинка"
+    },
+
+    "resetPassword": {
+      "header": "Ресетирање на лозинка",
+      "description": "Изберете нова лозинка која ќе ја користите за најава.",
+      "submit": "Постави лозинка",
+      "password": "Нова лозинка",
+      "confirmPassword": "Потврдете лозинка"
+    },
+
+    "forgotPassword": {
+      "passwordChangeEmailSent": "Ви е испратена е-пошта со упатства за обновување на лозинката.",
+      "header": "Заборавена лозинка",
+      "description": "Внесете ја е-поштата со која се најавувате. На оваа е-пошта ќе испратиме упатства за обновување на лозинката.",
+      "email": "Е-пошта",
+      "submit": "Обнови сметка"
+    }
+  }
+}

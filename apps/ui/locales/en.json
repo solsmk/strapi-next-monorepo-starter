@@ -1,21 +1,21 @@
 {
   "seo": {
-    "metaTitle": "DEV-TEMPLATE-SEO",
-    "metaDescription": "DEV-TEMPLATE-SEO",
-    "metaImageUrl": "DEV-TEMPLATE-SEO",
-    "keywords": "DEV-TEMPLATE-SEO",
-    "metaRobots": "DEV-TEMPLATE-SEO",
-    "applicationName": "DEV-TEMPLATE-SEO",
-    "siteName": "DEV-TEMPLATE-SEO",
-    "email": "DEV-TEMPLATE-SEO",
+    "metaTitle": "Sols Alk",
+    "metaDescription": "Sols Alk - Web platform",
+    "metaImageUrl": "",
+    "keywords": "Sols Alk",
+    "metaRobots": "index, follow",
+    "applicationName": "Sols Alk",
+    "siteName": "Sols Alk",
+    "email": "",
     "twitter": {
-      "card": "DEV-TEMPLATE-SEO",
-      "title": "DEV-TEMPLATE-SEO",
-      "description": "DEV-TEMPLATE-SEO",
-      "siteId": "DEV-TEMPLATE-SEO",
-      "creator": "DEV-TEMPLATE-SEO",
-      "creatorId": "DEV-TEMPLATE-SEO",
-      "imageUrl": "DEV-TEMPLATE-SEO"
+      "card": "summary_large_image",
+      "title": "Sols Alk",
+      "description": "Sols Alk - Web platform",
+      "siteId": "",
+      "creator": "",
+      "creatorId": "",
+      "imageUrl": ""
     }
   },
 
