@@ -35,7 +35,14 @@ export const Default: Story = {
 export const Sides: Story = {
   render: () => (
     <TooltipProvider>
-      <div style={{ display: "flex", gap: "1.5rem", padding: "3rem", justifyContent: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "1.5rem",
+          padding: "3rem",
+          justifyContent: "center",
+        }}
+      >
         <Tooltip>
           <TooltipTrigger asChild>
             <Button variant="outline">Top</Button>

@@ -1,5 +1,5 @@
-import { definePreview } from "@storybook/nextjs-vite"
 import React from "react"
+import { definePreview } from "@storybook/nextjs-vite"
 
 import "../src/styles/globals.css"
 

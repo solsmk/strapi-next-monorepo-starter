@@ -30,7 +30,9 @@ export const Default: Story = {
 
 export const WhiteOnDark: Story = {
   render: () => (
-    <div style={{ backgroundColor: "#1a1a1a", padding: "1.5rem", borderRadius: 8 }}>
+    <div
+      style={{ backgroundColor: "#1a1a1a", padding: "1.5rem", borderRadius: 8 }}
+    >
       <Paragraph textColor="white">
         This paragraph uses white text on a dark background.
       </Paragraph>

@@ -9,7 +9,14 @@ const meta = {
   argTypes: {
     variant: {
       control: "select",
-      options: ["heading1", "heading2", "heading3", "heading4", "heading5", "heading6"],
+      options: [
+        "heading1",
+        "heading2",
+        "heading3",
+        "heading4",
+        "heading5",
+        "heading6",
+      ],
     },
     textColor: {
       control: "select",
@@ -17,7 +24,17 @@ const meta = {
     },
     fontWeight: {
       control: "select",
-      options: ["black", "extraBold", "bold", "semiBold", "medium", "normal", "light", "extraLight", "thin"],
+      options: [
+        "black",
+        "extraBold",
+        "bold",
+        "semiBold",
+        "medium",
+        "normal",
+        "light",
+        "extraLight",
+        "thin",
+      ],
     },
     tag: {
       control: "select",
@@ -37,12 +54,24 @@ export const AllVariants: Story = {
   args: { children: "Heading" },
   render: () => (
     <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-      <Heading variant="heading1" tag="h1">Heading 1</Heading>
-      <Heading variant="heading2" tag="h2">Heading 2</Heading>
-      <Heading variant="heading3" tag="h3">Heading 3</Heading>
-      <Heading variant="heading4" tag="h4">Heading 4</Heading>
-      <Heading variant="heading5" tag="h5">Heading 5</Heading>
-      <Heading variant="heading6" tag="h6">Heading 6</Heading>
+      <Heading variant="heading1" tag="h1">
+        Heading 1
+      </Heading>
+      <Heading variant="heading2" tag="h2">
+        Heading 2
+      </Heading>
+      <Heading variant="heading3" tag="h3">
+        Heading 3
+      </Heading>
+      <Heading variant="heading4" tag="h4">
+        Heading 4
+      </Heading>
+      <Heading variant="heading5" tag="h5">
+        Heading 5
+      </Heading>
+      <Heading variant="heading6" tag="h6">
+        Heading 6
+      </Heading>
     </div>
   ),
 }

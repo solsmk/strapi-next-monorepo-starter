@@ -9,7 +9,12 @@ const meta = {
   argTypes: {
     borderColorClass: {
       control: "select",
-      options: ["border-white", "border-black", "border-blue-500", "border-red-500"],
+      options: [
+        "border-white",
+        "border-black",
+        "border-blue-500",
+        "border-red-500",
+      ],
     },
     borderWidthClass: {
       control: "select",
@@ -23,7 +28,9 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   render: () => (
-    <div style={{ backgroundColor: "#1a1a1a", padding: "2rem", borderRadius: 8 }}>
+    <div
+      style={{ backgroundColor: "#1a1a1a", padding: "2rem", borderRadius: 8 }}
+    >
       <Spinner className="h-6 w-6" />
     </div>
   ),
@@ -41,8 +48,16 @@ export const Sizes: Story = {
     <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
       <Spinner borderColorClass="border-black" className="h-4 w-4" />
       <Spinner borderColorClass="border-black" className="h-6 w-6" />
-      <Spinner borderColorClass="border-black" borderWidthClass="border-2" className="h-8 w-8" />
-      <Spinner borderColorClass="border-black" borderWidthClass="border-4" className="h-12 w-12" />
+      <Spinner
+        borderColorClass="border-black"
+        borderWidthClass="border-2"
+        className="h-8 w-8"
+      />
+      <Spinner
+        borderColorClass="border-black"
+        borderWidthClass="border-4"
+        className="h-12 w-12"
+      />
     </div>
   ),
 }

@@ -1,6 +1,7 @@
-import { defineMain } from "@storybook/nextjs-vite/node"
 import { dirname, join } from "node:path"
 import { fileURLToPath } from "node:url"
+
+import { defineMain } from "@storybook/nextjs-vite/node"
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
@@ -14,10 +15,7 @@ export default defineMain({
     "../src/components/page-builder/**/*.stories.@(ts|tsx)",
   ],
 
-  addons: [
-    "@storybook/addon-themes",
-    "@storybook/addon-mcp",
-  ],
+  addons: ["@storybook/addon-themes", "@storybook/addon-mcp"],
 
   staticDirs: ["../public"],
 
@@ -30,8 +28,7 @@ export default defineMain({
     // Alias modules that crash outside of Next.js runtime
     Object.assign(config.resolve.alias, {
       "@/env.mjs": join(mocksDir, "env.ts"),
-      "plaiceholder": join(mocksDir, "plaiceholder.ts"),
-      "@plaiceholder/next": join(mocksDir, "plaiceholder-next.ts"),
+      plaiceholder: join(mocksDir, "plaiceholder.ts"),
       "server-only": join(mocksDir, "server-only.ts"),
     })
 

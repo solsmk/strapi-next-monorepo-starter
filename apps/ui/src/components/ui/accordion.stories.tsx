@@ -71,7 +71,12 @@ export const Multiple: Story = {
 export const DefaultOpen: Story = {
   args: { type: "single" },
   render: () => (
-    <Accordion type="single" defaultValue="item-2" collapsible style={{ maxWidth: 450 }}>
+    <Accordion
+      type="single"
+      defaultValue="item-2"
+      collapsible
+      style={{ maxWidth: 450 }}
+    >
       <AccordionItem value="item-1">
         <AccordionTrigger>First section</AccordionTrigger>
         <AccordionContent>Content for the first section.</AccordionContent>

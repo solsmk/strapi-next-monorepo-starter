@@ -20,19 +20,13 @@ export const Default: Story = {
         <TabsTrigger value="settings">Settings</TabsTrigger>
       </TabsList>
       <TabsContent value="account">
-        <p style={{ padding: "1rem 0" }}>
-          Make changes to your account here.
-        </p>
+        <p style={{ padding: "1rem 0" }}>Make changes to your account here.</p>
       </TabsContent>
       <TabsContent value="password">
-        <p style={{ padding: "1rem 0" }}>
-          Change your password here.
-        </p>
+        <p style={{ padding: "1rem 0" }}>Change your password here.</p>
       </TabsContent>
       <TabsContent value="settings">
-        <p style={{ padding: "1rem 0" }}>
-          Adjust your settings here.
-        </p>
+        <p style={{ padding: "1rem 0" }}>Adjust your settings here.</p>
       </TabsContent>
     </Tabs>
   ),

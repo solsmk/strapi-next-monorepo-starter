@@ -19,7 +19,14 @@ export const Default: Story = {
 
 export const CardLayout: Story = {
   render: () => (
-    <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", maxWidth: 350 }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "0.75rem",
+        maxWidth: 350,
+      }}
+    >
       <Skeleton style={{ height: 200, width: "100%", borderRadius: 12 }} />
       <Skeleton style={{ height: 20, width: "80%" }} />
       <Skeleton style={{ height: 16, width: "60%" }} />
@@ -29,7 +36,14 @@ export const CardLayout: Story = {
 
 export const TextLines: Story = {
   render: () => (
-    <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", maxWidth: 400 }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "0.5rem",
+        maxWidth: 400,
+      }}
+    >
       <Skeleton style={{ height: 16, width: "100%" }} />
       <Skeleton style={{ height: 16, width: "90%" }} />
       <Skeleton style={{ height: 16, width: "75%" }} />
